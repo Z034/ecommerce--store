@@ -5,7 +5,7 @@ function ProductCard({ product, onAdd }) {
       <div className="card-body">
         <h3>{product.title}</h3>
         <p className="meta">
-          {product.medium} · {product.size}
+          {product.artist}, {product.year}
         </p>
         <p className="price">{product.price} DA</p>
         <button onClick={() => onAdd(product)}>Add to cart</button>
