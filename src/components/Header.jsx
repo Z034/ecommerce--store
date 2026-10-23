@@ -4,8 +4,7 @@ import { Search, Heart, ShoppingBag } from "lucide-react";
 import Logo from "./Logo";
 import { selectCartCount } from "../store/cartSlice";
 
-function Header({ search, onSearch }) {
-  const [open, setOpen] = useState(false);
+function Header({ search, onSearch, onOpenCart }) {  const [open, setOpen] = useState(false);
   const cartCount = useSelector(selectCartCount);
   const favCount = useSelector((state) => state.favorites.ids.length);
 
@@ -34,8 +33,7 @@ function Header({ search, onSearch }) {
           <Heart size={20} />
           {favCount > 0 && <span className="count">{favCount}</span>}
         </button>
-        <button className="icon-btn" aria-label="Cart">
-          <ShoppingBag size={20} />
+        <button className="icon-btn" aria-label="Cart" onClick={onOpenCart}>          <ShoppingBag size={20} />
           <span className="count plain">({cartCount})</span>
         </button>
       </div>
