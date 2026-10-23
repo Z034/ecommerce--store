@@ -9,32 +9,15 @@ import Footer from "./components/Footer";
 
 function App() {
   const [search, setSearch] = useState("");
-  const [favorites, setFavorites] = useState([]);
-
-  const toggleFav = (id) =>
-    setFavorites((prev) =>
-      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
-    );
 
   return (
     <>
       <StarField />
       <div className="app">
-        <Header
-          cartCount={0}
-          favCount={favorites.length}
-          search={search}
-          onSearch={setSearch}
-        />
+        <Header search={search} onSearch={setSearch} />
         <Hero />
         <main className="container">
-          <ProductList
-            products={products}
-            search={search}
-            favorites={favorites}
-            onToggleFav={toggleFav}
-            onAdd={(p) => console.log("add", p.title)}
-          />
+          <ProductList products={products} search={search} />
           <Features />
         </main>
         <Footer />

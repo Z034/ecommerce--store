@@ -1,8 +1,7 @@
 import { useState } from "react";
 import ProductCard from "./ProductCard";
 
-function ProductList({ products, search, favorites, onToggleFav, onAdd }) {
-  const [category, setCategory] = useState("All");
+function ProductList({ products, search }) {  const [category, setCategory] = useState("All");
 
   const categories = ["All", ...new Set(products.map((p) => p.category))];
   const q = search.trim().toLowerCase();
@@ -38,9 +37,6 @@ function ProductList({ products, search, favorites, onToggleFav, onAdd }) {
             <ProductCard
               key={p.id}
               product={p}
-              isFav={favorites.includes(p.id)}
-              onToggleFav={onToggleFav}
-              onAdd={onAdd}
             />
           ))}
         </div>

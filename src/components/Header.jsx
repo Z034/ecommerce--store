@@ -1,9 +1,13 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Search, Heart, ShoppingBag } from "lucide-react";
 import Logo from "./Logo";
+import { selectCartCount } from "../store/cartSlice";
 
-function Header({ cartCount, favCount, search, onSearch }) {
+function Header({ search, onSearch }) {
   const [open, setOpen] = useState(false);
+  const cartCount = useSelector(selectCartCount);
+  const favCount = useSelector((state) => state.favorites.ids.length);
 
   return (
     <header className="header">
