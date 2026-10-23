@@ -192,7 +192,7 @@ body::after {
   margin: 0 0 14px;
   max-width: 640px;
   font-weight: 400;
-  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-size: clamp(4rem, 6vw, 5rem);
   line-height: 1.05;
   color: var(--cream);
   text-shadow: 0 2px 24px rgba(5, 14, 36, 0.8);
