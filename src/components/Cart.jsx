@@ -23,7 +23,7 @@ function Cart({ open, onClose }) {
   }, [onClose]);
 
   const checkout = () => {
-    alert("Thank you for your order! (Payment is not part of this lab.)");
+    alert("Thank you for your order!");
     dispatch(clearCart());
     onClose();
   };
