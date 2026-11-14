@@ -6,7 +6,7 @@ const products = [
     year: 1889,
     price: 450000,
     category: "Van Gogh",
-    image: "/public/images/starry-night.jpeg",
+    image: "/images/starry-night.jpeg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const products = [
     year: 1888,
     price: 390000,
     category: "Van Gogh",
-    image: "/public/images/sunflowers.jpeg",
+    image: "/images/sunflowers.jpeg",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const products = [
     year: 1888,
     price: 360000,
     category: "Van Gogh",
-    image: "/public/images/cafe-terrace.jpeg",
+    image: "/images/cafe-terrace.jpeg",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const products = [
     year: 1906,
     price: 420000,
     category: "Monet",
-    image: "/public/images/water-lilies.jpeg",
+    image: "/images/water-lilies.jpeg",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const products = [
     year: 1875,
     price: 350000,
     category: "Monet",
-    image: "/public/images/woman-parasol.jpeg",
+    image: "/images/woman-parasol.jpeg",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const products = [
     year: 1831,
     price: 380000,
     category: "Others",
-    image: "/public/images/great-wave.jpeg",
+    image: "/images/great-wave.jpeg",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const products = [
     year: 1665,
     price: 480000,
     category: "Others",
-    image: "/public/images/pearl-earring.jpeg",
+    image: "/images/pearl-earring.jpeg",
   },
 ];
 
