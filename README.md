@@ -92,7 +92,7 @@ npm run dev
 
 
 ### Project structure
-
+```
 ecommerce-store/
 ├── public/
 │   └── images/
@@ -130,3 +130,9 @@ ecommerce-store/
 ├── package.json
 ├── .gitignore
 └── README.md
+```
+
+
+## Backend
+
+The REST API (Node.js, Express, MongoDB, JWT, OAuth 2.0, rate limiting) is in the `backend` folder
