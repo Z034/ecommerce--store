@@ -1,5 +1,7 @@
 # Starry Gallery API
 
+**Github repo:** [https://github.com/Z034/ecommerce--store.git/backend](https://github.com/Z034/ecommerce--store/tree/main/backend)
+
 ## Application description
 
 Starry Gallery API is the backend of the Starry Gallery online art store built in TD-TP 2 (React and Redux). It is a REST API with Node.js, Express and MongoDB. It stores the paintings and the users in a database, lets users register and log in, and protects the product management endpoints with JWT authentication and OAuth 2.0 (Google). Rate limiting protects the API against excessive requests and brute-force logins.
